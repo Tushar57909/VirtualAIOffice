@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-slate-900 font-sans antialiased selection:bg-indigo-500/20 selection:text-indigo-900;
+    background-color: #0b0f19;
+  }
+}
+
+/* Vibrant 3D Workspace Canvas Background */
+.bg-3d-canvas {
+  background-image: linear-gradient(to bottom, rgba(9, 13, 28, 0.45), rgba(15, 23, 42, 0.65)), url('/assets/bg_3d_colorful_workspace.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Ultra-Premium Glassmorphism Panels */
+.vibrant-glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 40px -8px rgba(0, 0, 0, 0.18), 0 4px 12px -2px rgba(99, 102, 241, 0.08);
+}
+
+.vibrant-glass-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 20px 50px -10px rgba(99, 102, 241, 0.25), 0 0 25px 0 rgba(168, 85, 247, 0.15);
+  transform: translateY(-2px);
+}
+
+.vibrant-glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5b4fc;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #a5b4fc transparent;
+}
